@@ -8,6 +8,7 @@ function searchUser(username){
 function displayResults(repos){
   $('.results').removeClass('hidden');
   $('.results').html('');
+  $('.results').append('<h2>Repos:</h2>');
   repos.forEach(repo=>{
     $('.results').append(`
       <ul><li><a href="${repo.url}" target="_blank">${repo.name}</a></li></ul>

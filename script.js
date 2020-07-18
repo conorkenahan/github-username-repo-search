@@ -1,7 +1,3 @@
-const apiKey = "1ef5b2dcbfddc0212ba609031f9d971cd2bdb99e";
-
-
-
 function searchUser(username){
   fetch(`https://api.github.com/users/${username}/repos`)
   .then(res => res.json())
